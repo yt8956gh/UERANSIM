@@ -7,6 +7,11 @@
 <img src="https://img.shields.io/badge/License-GPL--3.0-green"/>
 </p>
 
+# UERANSIM (compatible with free5GC ATSSS feature)
+
+> **WARNING:** Due to the absence of supporting ATSSS IEs in UERANSIM, we take some checking functions of UERAMSIM away to make it compatible with the free5GC ATSSS feature. There could be some workarounds not following 3GPP TS.
+
+
 **UERANSIM** <small>(pronounced "ju-i ræn sɪm")</small>, is the open-source state-of-the-art 5G UE and RAN (gNodeB)
 implementation. It can be considered as a 5G mobile phone and a base station in basic terms. The project can be used for
 testing 5G Core Network and studying 5G System.
@@ -27,7 +32,7 @@ Meanwhile, 5G-NR radio interface is partially implemented, and simulated over UD
 
 <p align="center">
 <img src="https://img.shields.io/badge/Radio%20Interface-simulated-orange" alt="OS Linux"/>
-<img src="https://img.shields.io/badge/Control%20Plane-functional-green" alt="OS Linux"/>  
+<img src="https://img.shields.io/badge/Control%20Plane-functional-green" alt="OS Linux"/>
 <img src="https://img.shields.io/badge/User%20Plane-functional-green" alt="OS Linux"/>
 </p>
 

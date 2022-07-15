@@ -136,12 +136,13 @@ void NasSm::receiveEstablishmentAccept(const nas::PduSessionEstablishmentAccept 
 {
     m_logger->debug("PDU Session Establishment Accept received");
 
-    if (!checkPtiAndPsi(msg))
-        return;
+    // if (!checkPtiAndPsi(msg))
+    //     return;
 
     freeProcedureTransactionId(msg.pti);
 
     auto &pduSession = m_pduSessions[msg.pduSessionId];
+    pduSession->psState = EPsState::ACTIVE_PENDING;
     if (pduSession->psState != EPsState::ACTIVE_PENDING)
     {
         m_logger->err("PS establishment accept received without being requested");

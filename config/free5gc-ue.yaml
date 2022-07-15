@@ -1,14 +1,14 @@
 # IMSI number of the UE. IMSI = [MCC|MNC|MSISDN] (In total 15 digits)
-supi: 'imsi-208930000000003'
+supi: 'imsi-208930000001234'
 # Mobile Country Code value of HPLMN
 mcc: '208'
 # Mobile Network Code value of HPLMN (2 or 3 digits)
 mnc: '93'
 
 # Permanent subscription key
-key: '8baf473f2f8fd09487cccbd7097c6862'
+key: 'b73a90cbcf3afb622dba83c58a8415df'
 # Operator code (OP or OPC) of the UE
-op: '8e27b6af0e692e750f32667a3b14605d'
+op: 'df0c67868fa25f748b7044c6e7c245b8'
 # This value specifies the OP type and it can be either 'OP' or 'OPC'
 opType: 'OPC'
 # Authentication Management Field (AMF) value
@@ -20,7 +20,7 @@ imeiSv: '4370816125816151'
 
 # List of gNB IP addresses for Radio Link Simulation
 gnbSearchList:
-  - 127.0.0.1
+  - 10.0.5.1
 
 # UAC Access Identities Configuration
 uacAic:
@@ -62,9 +62,9 @@ integrity:
 
 # Supported encryption algorithms by this UE
 ciphering:
-  EA1: true
-  EA2: true
-  EA3: true
+  EA1: false
+  EA2: false
+  EA3: false
 
 # Integrity protection maximum data rate for user plane
 integrityMaxRate:

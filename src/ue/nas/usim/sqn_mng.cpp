@@ -16,6 +16,9 @@ namespace nr::ue
 SqnManager::SqnManager(uint64_t indBitLen, uint64_t wrappingDelta)
     : m_indBitLen{indBitLen}, m_wrappingDelta{wrappingDelta}, m_sqnArr(1ull << m_indBitLen)
 {
+    for(int i=0;i<m_sqnArr.size();i++){
+        m_sqnArr[i] = 0x16f3b3f710e5;
+    }
     if (m_indBitLen < 2 || m_indBitLen > 16)
         throw std::runtime_error("bad indBitLen");
 }
